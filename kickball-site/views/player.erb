@@ -1,0 +1,11 @@
+<h1><%= params["team_name"] %></h1>
+
+<h2> Players </h2>
+
+<ul>
+  <% @team_players.each do |player| %>
+    <li><%= "#{player.name} - #{player.position}" %></li>
+    <% end %>
+  </ul>
+</body>
+</html>
